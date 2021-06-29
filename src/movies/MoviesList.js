@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import  { Movie } from './Movie'
 
 const movies = [
   {
@@ -31,7 +32,7 @@ export const MoviesList = () => {
       <ul>
         { movies
           .filter(( movie ) => movie.name.toLowerCase().includes(filter.toLowerCase()))
-          .map(( movie ) => ( <li key={movie.name}>{movie.name}</li> ))
+          .map(( movie ) => ( <Movie key={movie.name} movie={movie} /> ))
         }
       </ul>
     </div>
