@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import  { Movie } from './Movie'
+import { Filter } from '../components/Filter'
 
 const movies = [
   {
@@ -21,14 +22,7 @@ export const MoviesList = () => {
 
   return (
     <div>
-      <label>
-        Filter Movies
-        <input 
-          value={filter}
-          onChange={ (event) => {
-          setFilter(event.target.value)
-        }} />
-      </label>
+      <Filter filter={filter} setFilter={setFilter} />
       <ul>
         { movies
           .filter(( movie ) => movie.name.toLowerCase().includes(filter.toLowerCase()))
