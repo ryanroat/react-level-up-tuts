@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const Movie = ({ movie, config }) => {
   return (
     <li>
-      <Link to="/details">
+      <Link to={`/movie/${movie.id}`}>
         {config.images?.base_url && (
           <img src={config.images.base_url + config.images.poster_sizes[2] + movie.poster_path} alt={movie.title + " poster"} />
         )}
@@ -16,7 +16,14 @@ export const Movie = ({ movie, config }) => {
 
 Movie.propTypes = {
   movie: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     poster_path: PropTypes.string.isRequired,
-  }).isRequired
+  }).isRequired,
+  config: PropTypes.shape({
+    images: PropTypes.shape({
+      base_url: PropTypes.string,
+      poster_sizes: PropTypes.array
+    })
+  })
 }
