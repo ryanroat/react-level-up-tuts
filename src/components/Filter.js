@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 export const Filter = ({ filter, setFilter }) => {
   return (
     <div>
-      <label>
+      <label className="filter">
         Filter Movies
-        <input 
+        <input className="filter-input"
           value={filter}
           onChange={ (event) => {
           setFilter(event.target.value)
