@@ -50,3 +50,46 @@
   width: 100%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.65);
 }
+
+.backdrop {
+  background-color: #fff;
+  width: 100%;
+  opacity: 67%;
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+.movie-details {
+
+}
+
+.movie-details ul {
+  list-style: none;
+}
+
+.movie-details__details {
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  z-index: 10;
+  margin-top: 400px;
+  display: flex;
+  text-align: left;
+  gap: 20px;
+  padding: 20px;}
+
+.title-tagline {
+  text-align: center;
+}
+
+.details ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.poster {
+  position: relative;
+  margin-top: -175px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.65);
+}

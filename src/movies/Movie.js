@@ -6,7 +6,7 @@ export const Movie = ({ movie, config }) => {
     <li>
       <Link to={`/movie/${movie.id}`}>
         {config.images?.base_url && (
-          <img src={config.images.base_url + config.images.poster_sizes[2] + movie.poster_path} alt={movie.title + " poster"} />
+          <img src={config.images.base_url + config.images.poster_sizes[4] + movie.poster_path} alt={movie.title + " poster"} />
         )}
         <h3>{movie.title}</h3>
       </Link>
