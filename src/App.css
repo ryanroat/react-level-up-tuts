@@ -52,7 +52,12 @@
 }
 
 .movies-list-poster:hover {
-  transform: scale(.98);
+  box-shadow: 
+    10px 10px 15px rgba(0, 0, 0, 0.55),
+    -10px 10px 15px rgba(0, 0, 0, 0.55),
+    10px -10px 15px rgba(0, 0, 0, 0.55),
+    -10px -10px 15px rgba(0, 0, 0, 0.55);
+
 }
 
 

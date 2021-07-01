@@ -23,9 +23,12 @@ code {
 a {
   text-decoration: none;
   color: inherit;
+  text-transform: uppercase;
 }
-a:hover {
-  font-size: .9rem;
+a:hover,
+a:focus {
+  /* font-size: .9rem; */
+  color: #EEE;    
 }
 
 input {
