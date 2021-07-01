@@ -39,7 +39,7 @@ export const MoviesList = () => {
 
   return (
     <div>
-      <Filter filter={filter} setFilter={setFilter} />
+      <Filter filter={filter} setFilter={setFilter} placeholder="search movies" />
       <ul className="movies-list">
         { movies
           .filter(( movie ) => movie.title.toLowerCase().includes(filter.toLowerCase()))
