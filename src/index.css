@@ -23,12 +23,16 @@ code {
 a {
   text-decoration: none;
   color: inherit;
-  text-transform: uppercase;
 }
 a:hover,
 a:focus {
   /* font-size: .9rem; */
   color: #EEE;    
+}
+
+.movies-list a,
+.title-tagline {
+  text-transform: uppercase;
 }
 
 input {
